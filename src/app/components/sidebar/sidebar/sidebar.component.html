@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-action-list>
+        <div mat-subheader>MENU</div>
+
+        <button mat-list-item routerLink = "dashboard">
+            <mat-icon class="mr10">home</mat-icon> 
+            DASHBOARD
+        </button>
+
+        <button mat-list-item routerLink = "dashboard">
+            <mat-icon class="mr10">account_circle</mat-icon> 
+            PROFILE
+        </button>
+
+        <button mat-list-item routerLink = "createDefect">
+            <mat-icon class="mr10">create_new_folder</mat-icon> 
+            CREATE DEFECT
+        </button>
+
+        <button mat-list-item routerLink = "listDefect">
+            <mat-icon class="mr10">dvr</mat-icon> 
+            LIST DEFECT
+        </button>
+
+        <button (click) = "logout()"  mat-list-item>
+            <mat-icon class="mr10">logout</mat-icon> 
+            LOGOUT
+        </button>
+
+    </mat-action-list>
+</mat-card>
